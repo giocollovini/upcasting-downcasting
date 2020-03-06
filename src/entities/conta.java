@@ -35,11 +35,11 @@ public class conta {
 		return saldo;
 	}
 
-	public void withdraw(double valor) {
-		saldo -= valor;
+	public void saque(double valor) {
+		saldo -= valor + 5.0;
 	}
 
-	public void deposit(double valor) {
+	public void deposito(double valor) {
 		saldo += valor;
 	}
 }

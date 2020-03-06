@@ -33,5 +33,20 @@ public class ProgramUpcastingDowncasting {
 			acc5.updateSaldo();
 			System.out.println("Update!");
 		}
+		
+		
+		conta acc6 = new conta(1001, "Alex", 1000.0);
+		acc6.saque(200.0);
+		System.out.println(acc6.getsaldo());
+		
+		conta acc7 = new contaPoupanca(1002, "Maria", 1000.0, 0.01);
+		acc7.saque(200.0);
+		System.out.println(acc7.getsaldo());
+		
+		conta acc8 = new contaNegocios(1003, "Bob", 1000.0, 500.0);
+		acc8.saque(200.0);
+		System.out.println(acc8.getsaldo());
+		
+		
 	}
 }
